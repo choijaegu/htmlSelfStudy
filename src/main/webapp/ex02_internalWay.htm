@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*
+	여기 영역은 CSS 영역입니다.
+	
+	selector {속성:value;....}
+*/
+
+/*
+	1.태그이름으로 적용하기
+*/
+
+h3{color: red;background-color: yellow;}
+
+h3,h2{font-family: 궁서체; text-decoration: underline;}
+
+
+/*
+	2.id로 적용하기 = #이름
+*/
+#a{font-style: italic;}
+#b{text-shadow: 3px 5px green}
+
+/*
+	3.class적용하기 = .이름
+*/
+.a{padding: 20px; border: double 3px blue}
+.b{border - radius: 15px}
+
+/*element의 하위(자식) 노드 찾기
+ex)div > p 는 div태그의 자식 찾기
+ex)div p 는 div태그의 모든 하위(자손들) 찾기
+ex)div+p div형제노드중에 첫번째 p 찾기
+ex)div~p div형제노드중에 모든 p 찾기
+*/
+/*
+div>p{background-color: pink}
+*/
+
+div p{background-color: green}
+
+/*
+	속성으로 찾기 = [attribute]"
+*/
+/*
+[type]{border: 5px red double;}
+*/
+[type = text]{background-color: pink}
+
+/*~시작하는 ^, ~로 끝나는 $, ~를 표함한 *...*/
+</style>
+</head>
+<body>
+<h3 class="a b">css 적용방법 - internalWay</h3>
+
+<h2>적용방법 - internalWay</h2>
+
+<h3 id="a">css 적용방법ddd-internalWay</h3>
+
+<div class = "a">안녕하세요</div>
+
+<hr>
+
+<h1>Demo of the element > element selector</h1>
+
+<div>
+	<h2>My name is Donald</h2>
+	<p>I live in Duckburg</p>
+</div>
+
+<div>
+	<span>
+	
+		<p>I will not be styled.</p>
+	</span>
+
+
+</div>
+
+<p>My best friedn is Mickey</p>
+
+<hr>
+
+<form action="" method="get">
+	이름: <input type = "text" name = "name"><br>
+	비번: <input type = "password" name = "password">
+
+</form>
+
+<hr>
+</body>
+</html>
